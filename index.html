@@ -6,13 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
 
+    <style>
+        [class*="col"] {
+          padding: 1rem;
+          background-color: #73C6B6;
+          border: 2px solid #fff;
+          color: #fff;
+          text-align: center;
+        }
+  
+        [class*="con"] {
+          padding: 1rem;
+          background-color: #FF9079;
+          
+          border: 2px solid #fff;
+          color: #fff;
+          text-align: center;
+        }
+      </style>
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
   </head>
   <body>
     <h1>Hello, world!</h1>
-
+    
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-sm">
+                Hello
+            </div>
+            <div class="col-sm">
+                Bye
+            </div>
+        </div>
+    </div>
     <!-- 
         Header
      -->
