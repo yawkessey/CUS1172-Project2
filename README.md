@@ -1,1 +1,1 @@
-##CUS1172 Project 2: Task Manager
+## CUS1172 Project 2: Task Manager
