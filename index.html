@@ -33,16 +33,54 @@
   <body>
     <h1>Hello, world!</h1>
     
-    <div class="container-lg">
-        <div class="row">
-            <div class="col-sm">
-                Hello
-            </div>
-            <div class="col-sm">
-                Bye
-            </div>
-        </div>
+    
+
+   
+
+        <!-- Task Form 
+            Task-title : select tag
+            Task-Priority : select tag
+            Task Status : radio button
+            Submit button
+                Appends that task in an array as well as append the task-list in the HTML
+                Alert when new task added successfuly 
+                     <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                    </div>
+
+
+    -->
+    <div class="container">
+      <h1>To Do List</h1>
+      <button class="btn btn-dark" type="button">
+        Add Task
+      </button>
     </div>
+
+    <div class="container">
+      <div class="taskForm">
+        <form>
+          <h1>New Task</h1>
+          <label for="taskName">Name of Task</label>
+          <input type="text" id="taskName" name="taskName">
+  
+          <label for="taskPriority">Choose Priority</label>
+          <select name="taskPriority" id="taskPriority">
+            <option value="low">Low Priority</option>
+            <option value="medium">Medium Priority</option>
+            <option value="High">High Priority</option>
+          </select>
+  
+          <input type="radio" id="complete" name="taskStatus" value="complete"> 
+          <label for="complete">Complete</label>
+          <input type="radio" id="pending" name="taskStatus" value="pending"> 
+          <label for="pending">Pending</label>
+  
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+   
     <!-- 
         Header
      -->
@@ -61,24 +99,10 @@
                     Use event handlers
     -->
 
-    <!-- Task Form 
-            Task-title : select tag
-            Task-Priority : select tag
-            Task Status : radio button
-            Submit button
-                Appends that task in an array as well as append the task-list in the HTML
-                Alert when new task added successfuly 
-                     <div class="alert alert-success" role="alert">
-                        A simple success alert—check it out!
-                    </div>
 
-
-    -->
     
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="myscript.js"></script>
   </body>
 </html>
